@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <title>PAWLY Sanctuary — Curated Pet Adoption</title>
+<meta name="description" content="A sanctuary standard for noble rescues. Uniting distinguished canines, felines, and gentle familiars with committed homes worldwide.">
+<meta name="theme-color" content="#0b0e17">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b0e17'/%3E%3Ccircle cx='20' cy='24' r='5.5' fill='%23e6b88a'/%3E%3Ccircle cx='32' cy='18' r='5.5' fill='%23e6b88a'/%3E%3Ccircle cx='44' cy='24' r='5.5' fill='%23e6b88a'/%3E%3Cpath d='M32 30c-7.5 0-14 5.5-14 12.5 0 4 3 6.5 7 6.5 2.5 0 4.5-1 7-1s4.5 1 7 1c4 0 7-2.5 7-6.5C46 35.5 39.5 30 32 30z' fill='%23e6b88a'/%3E%3C/svg%3E">
+</head>
+<body>
+
+    <header id="home">
+        <div class="logo">
+            <h1>PAWLY</h1>
+            <div class="gorizaltal-chiziq-logo"></div>
+            <h2 class="sanct">SANCTUARY</h2>
+        </div>
+        <div class="a-links">
+            <a href="#home">Home</a>
+            <a href="#">Adopt</a>
+            <a href="#">How it Works</a>
+            <a href="#">Stories</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="icon">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="like">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <button id="adoptNow">Adopt Now</button>
+        </div>
+    </header>
+    <section class="section1">
+        <div class="home-text">
+            <div class="circle-home-text"></div>
+            <h1>SANCTUARY REGISTRY . AUTUMN 2025 EDITION</h1>
+        </div>
+        <h1 class="text-find">Find Your <span style="color: #FFB690;">Perfect <br>Companion.</span></h1>
+        <div class="text-buttons">
+            <h5>A sanctuary standard for noble rescues. We unite distinguished canines, felines, <br>and gentle familiars with committed homes worldwide through clinical <br>behavioral science and private courier transit.</h5>
+            <div class="buttons-home">
+                <button id="adoptnow1">Adopt Now <span>→</span></button>
+                <button id="adoption">Adoption Protocol </button>
+            </div>
+        </div>
+        <div class="img-text-div">
+            <div class="img-div">
+                <img src="img/hero-img.jpg" alt="" class="hero-img">
+            </div>
+            <div class="text-div">  
+                <img src="img/hero-img1.jpg" alt="" class="hero-img1">
+
+                <div class="text-div-clinic">
+                    <div class="circle-teck">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
+                    <div class="block">
+                        <h3>99.4% Clinical Placement</h3>
+                        <h4 style="font-weight: 500; font-size: 14px; color: #A7A9B3;">Validated behavioral acclimation index</h4>
+                    </div>
+                    
+                </div>
+                <div class="text-div-clinic">
+                    <div class="circle-teck1">
+                        <i class="fa-solid fa-shield"></i>
+                    </div>
+                    <div class="block">
+                        <h3>Zero-Kill Global Sanctuaries</h3>
+                        <h4 style="font-weight: 500; font-size: 14px; color: #A7A9B3;">Permanent sanctuary guarantees under charter</h4>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="sanctuary-section">
+  <div class="sanctuary-container">
+   <div class="sanctuary-header">
+      <div class="header-text-group">
+        <span class="sub-badge">● CURATED SANCTUARY DOSSIERS</span>
+        <h2 class="main-title">Companions Ready for a <span>Loving Home</span></h2>
+        <p class="subtitle">Each candidate has undergone our 60-point temperament evaluation, complete orthopedic examination, and comprehensive lifestyle matching assessment.</p>
+      </div>
+      <div class="profile-counter">
+        <span class="dot"></span> Showing <strong id="visibleCount">16</strong> of 342 Verified Profiles
+      </div>
+    </div>
+
+    <div class="filter-panel">
+      <div class="filter-top">
+        <div class="search-box">
+          <span class="search-icon">&#128269;</span>
+          <input type="text" id="searchInput" placeholder="Search by breed, name, or disposition trait...">
+        </div>
+        <div class="category-tabs" id="categoryTabs">
+          <button class="tab-btn active" data-category="all">ALL COMPANIONS</button>
+          <button class="tab-btn" data-category="dog">CANINES (DOGS)</button>
+          <button class="tab-btn" data-category="cat">FELINES (CATS)</button>
+          <button class="tab-btn" data-category="small">RABBITS &amp; SMALL</button>
+          <button class="tab-btn" data-category="bird">AVIARY &amp; BIRDS</button>
+        </div>
+      </div>
+
+      <div class="filter-bottom">
+        <select id="phaseFilter" class="custom-select">
+          <option value="all">Life Phase: All</option>
+          <option value="young">Life Phase: Young (Under 2 Yrs)</option>
+          <option value="adult">Life Phase: Adult (2 - 4 Yrs)</option>
+          <option value="senior">Life Phase: Mature (5+ Yrs)</option>
+        </select>
+
+        <select id="temperamentFilter" class="custom-select">
+          <option value="all">Temperament: Any</option>
+          <option value="gentle">Temperament: Gentle &amp; Calm</option>
+          <option value="active">Temperament: Playful &amp; Active</option>
+        </select>
+
+        <select id="statusFilter" class="custom-select">
+          <option value="all">Placement: All Statuses</option>
+          <option value="TOP MATCH">Top Match</option>
+          <option value="NEW ARRIVAL">New Arrival</option>
+          <option value="URGENT NEED">Urgent Need</option>
+          <option value="FOSTER FAVORITE">Foster Favorite</option>
+        </select>
+
+        <button id="resetBtn" class="reset-btn">&#8635; RESET FILTERS</button>
+      </div>
+    </div>
+
+    <div class="companions-grid" id="companionsGrid">
+      <article class="companion-card" data-category="dog" data-phase="adult" data-temperament="gentle" data-status="TOP MATCH">
+        <div class="card-media">
+          <img src="img/adopt-img.jpg" alt="Aurelius">
+          <span class="status-badge badge-gold">TOP MATCH</span>
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Aurelius</h3>
+            <span class="age-pill">2.5 Yrs</span>
+          </div>
+          <p class="breed">Golden Retriever Mix</p>
+          <div class="meta-info">
+            <span>&#9679; 62 LBS &bull; MALE</span>
+            <span>&#128205; BROOKLYN SANCTUARY</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="companion-card" data-category="dog" data-phase="young" data-temperament="active" data-status="FOSTER FAVORITE">
+        <div class="card-media">
+          <img src="img/adopt-img1.jpg" alt="Nova">
+          <span class="status-badge badge-purple">FOSTER FAVORITE</span>
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Nova</h3>
+            <span class="age-pill">1.5 Yrs</span>
+          </div>
+          <p class="breed">Blue Merle Australian Shepherd</p>
+          <div class="meta-info">
+            <span>&#9679; 44 LBS &bull; FEMALE</span>
+            <span>&#128205; NORTH BAY SHELTER</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="companion-card" data-category="cat" data-phase="adult" data-temperament="gentle" data-status="NEW ARRIVAL">
+        <div class="card-media">
+          <img src="img/adopt-img2.jpg" alt="Sebastian">
+          <span class="status-badge badge-dark">NEW ARRIVAL</span>
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Sebastian</h3>
+            <span class="age-pill">3 Yrs</span>
+          </div>
+          <p class="breed">Silver Shaded Maine Coon</p>
+          <div class="meta-info">
+            <span>&#9679; 18 LBS &bull; MALE</span>
+            <span>&#128205; CHICAGO METRO</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="companion-card" data-category="dog" data-phase="adult" data-temperament="active" data-status="URGENT NEED">
+        <div class="card-media">
+          <img src="img/adopt-img3.jpg" alt="Barnaby">
+          <span class="status-badge badge-red">URGENT NEED</span>
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Barnaby</h3>
+            <span class="age-pill">2.5 Yrs</span>
+          </div>
+          <p class="breed">Retriever &amp; Shepherd Cross</p>
+          <div class="meta-info">
+            <span>&#9679; 58 LBS &bull; MALE</span>
+            <span>&#128205; AUSTIN HUB</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="companion-card" data-category="cat" data-phase="adult" data-temperament="gentle" data-status="TOP MATCH">
+        <div class="card-media">
+          <img src="img/adopt-img4.jpg" alt="Cleo">
+          <span class="status-badge badge-gold">TOP MATCH</span>
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Cleo</h3>
+            <span class="age-pill">2 Yrs</span>
+          </div>
+          <p class="breed">Seal Point Siamese</p>
+          <div class="meta-info">
+            <span>&#9679; 9 LBS &bull; FEMALE</span>
+            <span>&#128205; SEATTLE RESCUE</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="companion-card" data-category="dog" data-phase="adult" data-temperament="active" data-status="ALL">
+        <div class="card-media">
+          <img src="img/adopt-img5.jpg" alt="Copper">
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Copper</h3>
+            <span class="age-pill">3 Yrs</span>
+          </div>
+          <p class="breed">Tricolor Beagle Hound</p>
+          <div class="meta-info">
+            <span>&#9679; 29 LBS &bull; MALE</span>
+            <span>&#128205; DENVER SANCTUARY</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="companion-card" data-category="cat" data-phase="young" data-temperament="gentle" data-status="NEW ARRIVAL">
+        <div class="card-media">
+          <img src="img/adopt-img6.jpg" alt="Mochi">
+          <span class="status-badge badge-dark">NEW ARRIVAL</span>
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Mochi</h3>
+            <span class="age-pill">1.5 Yrs</span>
+          </div>
+          <p class="breed">Lilac Scottish Fold</p>
+          <div class="meta-info">
+            <span>&#9679; 8.5 LBS &bull; FEMALE</span>
+            <span>&#128205; PORTLAND SUITE</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="companion-card" data-category="dog" data-phase="adult" data-temperament="active" data-status="TOP MATCH">
+        <div class="card-media">
+          <img src="img/adopt-img7.jpg" alt="Jasper">
+          <span class="status-badge badge-gold">TOP MATCH</span>
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Jasper</h3>
+            <span class="age-pill">2 Yrs</span>
+          </div>
+          <p class="breed">Border Collie Champion Line</p>
+          <div class="meta-info">
+            <span>&#9679; 42 LBS &bull; MALE</span>
+            <span>&#128205; SALT LAKE HUB</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="companion-card" data-category="small" data-phase="young" data-temperament="gentle" data-status="NEW ARRIVAL">
+        <div class="card-media">
+          <img src="img/adopt-img8.jpg" alt="Pip">
+          <span class="status-badge badge-dark">NEW ARRIVAL</span>
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Pip</h3>
+            <span class="age-pill">1 Yr</span>
+          </div>
+          <p class="breed">Purebred Holland Lop</p>
+          <div class="meta-info">
+            <span>&#9679; 3.8 LBS &bull; MALE</span>
+            <span>&#128205; SANCTUARY WEST</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="companion-card" data-category="dog" data-phase="adult" data-temperament="active" data-status="ALL">
+        <div class="card-media">
+          <img src="img/adopt-img9.jpg" alt="Winston">
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Winston</h3>
+            <span class="age-pill">2 Yrs</span>
+          </div>
+          <p class="breed">Pembroke Welsh Corgi</p>
+          <div class="meta-info">
+            <span>&#9679; 26 LBS &bull; MALE</span>
+            <span>&#128205; SAN FRANCISCO RESCUE</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="companion-card" data-category="dog" data-phase="adult" data-temperament="active" data-status="URGENT NEED">
+        <div class="card-media">
+          <img src="img/adopt10.jpg" alt="Freya">
+          <span class="status-badge badge-red">URGENT NEED</span>
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Freya</h3>
+            <span class="age-pill">3 Yrs</span>
+          </div>
+          <p class="breed">Siberian Husky</p>
+          <div class="meta-info">
+            <span>&#9679; 48 LBS &bull; FEMALE</span>
+            <span>&#128205; NORTH STAR HUB</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="companion-card" data-category="cat" data-phase="adult" data-temperament="gentle" data-status="TOP MATCH">
+        <div class="card-media">
+          <img src="img/adopt-img11.jpg" alt="Figaro">
+          <span class="status-badge badge-gold">TOP MATCH</span>
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Figaro</h3>
+            <span class="age-pill">2 Yrs</span>
+          </div>
+          <p class="breed">Domestic Tuxedo Cat</p>
+          <div class="meta-info">
+            <span>&#9679; 10.3 LBS &bull; MALE</span>
+            <span>&#128205; BOSTON GUILD</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="companion-card" data-category="dog" data-phase="adult" data-temperament="active" data-status="ALL">
+        <div class="card-media">
+          <img src="img/adopt12.jpg" alt="Bruno">
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Bruno</h3>
+            <span class="age-pill">4 Yrs</span>
+          </div>
+          <p class="breed">Chocolate Lab &amp; Pointer Mix</p>
+          <div class="meta-info">
+            <span>&#9679; 65 LBS &bull; MALE</span>
+            <span>&#128205; ATLANTA HAVEN</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="companion-card" data-category="cat" data-phase="adult" data-temperament="gentle" data-status="TOP MATCH">
+        <div class="card-media">
+          <img src="img/adopt13.jpg" alt="Penelope">
+          <span class="status-badge badge-gold">TOP MATCH</span>
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Penelope</h3>
+            <span class="age-pill">3 Yrs</span>
+          </div>
+          <p class="breed">Calico Short Hair</p>
+          <div class="meta-info">
+            <span>&#9679; 7.9 LBS &bull; FEMALE</span>
+            <span>&#128205; SAN DIEGO HUB</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="companion-card" data-category="bird" data-phase="young" data-temperament="gentle" data-status="NEW ARRIVAL">
+        <div class="card-media">
+          <img src="img/adopt14.jpg" alt="Sunny">
+          <span class="status-badge badge-dark">NEW ARRIVAL</span>
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Sunny</h3>
+            <span class="age-pill">1.5 Yrs</span>
+          </div>
+          <p class="breed">Lutino Cockatiel</p>
+          <div class="meta-info">
+            <span>&#9679; 95 GRAMS &bull; MALE</span>
+            <span>&#128205; PHOENIX AVIARY</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="companion-card" data-category="cat" data-phase="senior" data-temperament="gentle" data-status="URGENT NEED">
+        <div class="card-media">
+          <img src="img/adopt-img.jpg" alt="Oliver">
+          <span class="status-badge badge-red">URGENT NEED</span>
+          <button class="fav-btn" aria-label="Favorite">&#9825;</button>
+          <div class="media-overlay"></div>
+        </div>
+        <div class="card-body">
+          <div class="title-row">
+            <h3>Oliver</h3>
+            <span class="age-pill">5 Yrs</span>
+          </div>
+          <p class="breed">Classic Brown Tabby</p>
+          <div class="meta-info">
+            <span>&#9679; 12.4 LBS &bull; MALE</span>
+            <span>&#128205; BROOKLYN CARE</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn-dossier">DOSSIER</button>
+            <button class="btn-adopt">ADOPT</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="protocol-section">
+  <div class="protocol-container">
+    <div class="protocol-header">
+      <span class="protocol-sub-badge">&#9679; RIGOROUS WELFARE STANDARD</span>
+      <h2 class="protocol-title">The 4-Step <span>Adoption Protocol</span></h2>
+      <p class="protocol-subtitle">Engineered for an enduring, lifelong match. Our process marries clinical veterinary diagnostics with personalized environmental vetting to guarantee absolute synergy between companion and guardian.</p>
+    </div>
+
+    <div class="protocol-grid">
+      <div class="protocol-card">
+        <div class="card-top-row">
+          <span class="step-num num-purple">01</span>
+          <span class="time-pill">15 MIN INTAKE</span>
+        </div>
+        <div class="icon-box icon-purple">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="M9 12h6"/><path d="M9 16h6"/></svg>
+        </div>
+        <h3>Lifestyle Architecture</h3>
+        <p>Complete our comprehensive living profile assessing acoustic tolerance, daily rhythm, outdoor access, and co-resident dynamics.</p>
+        <div class="card-footer-tag tag-purple">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>AUTOMATED COMPATIBILITY AI</span>
+        </div>
+      </div>
+
+      <div class="protocol-card">
+        <div class="card-top-row">
+          <span class="step-num num-purple">02</span>
+          <span class="time-pill">30 MIN SESSION</span>
+        </div>
+        <div class="icon-box icon-purple">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        </div>
+        <h3>Virtual Sanctuary Meet</h3>
+        <p>Live interactive video consultation directly with the pet's dedicated foster curator and an accredited veterinary behaviorist.</p>
+        <div class="card-footer-tag tag-purple">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>FULL MEDICAL HISTORY REVIEW</span>
+        </div>
+      </div>
+
+      <div class="protocol-card">
+        <div class="card-top-row">
+          <span class="step-num num-purple">03</span>
+          <span class="time-pill">PRIVATE SALON</span>
+        </div>
+        <div class="icon-box icon-purple">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Direct Meet &amp; Greet</h3>
+        <p>Experience an unhurried, private sanctuary session in our tranquil acclimatization suites or arrange an accompanied courier visit.</p>
+        <div class="card-footer-tag tag-purple">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>CALIBRATED SENSORY SPACE</span>
+        </div>
+      </div>
+
+      <div class="protocol-card">
+        <div class="card-top-row">
+          <span class="step-num num-amber">04</span>
+          <span class="time-pill">30-DAY GUARANTEE</span>
+        </div>
+        <div class="icon-box icon-amber">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M12 11v6"/><path d="M9 14h6"/></svg>
+        </div>
+        <h3>Welcome Home &amp; Escort</h3>
+        <p>Handover includes international health passport, Trupanion policy initiation, microchip registration, and round-the-clock liaison access.</p>
+        <div class="card-footer-tag tag-amber">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>24/7 CLINICAL HOTLINE</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="checklist-accordion" id="checklistAccordion">
+      <button class="accordion-trigger" id="accordionTrigger" type="button">
+        <div class="accordion-left">
+          <div class="accordion-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <div class="accordion-titles">
+            <h4>Guardian Acclimatization Checklist</h4>
+            <span>Click to expand our curated recommendations for arrival day protocol</span>
+          </div>
+        </div>
+        <div class="accordion-arrow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+      </button>
+
+      <div class="accordion-content" id="accordionContent">
+        <div class="checklist-grid">
+          <div class="checklist-item">
+            <h5>01. Decompression Sanctuary</h5>
+            <p>Prepare a quiet, low-stimulation room with orthopedic bedding, fresh filtered water, and familiar scent textiles for the first 72 hours.</p>
+          </div>
+          <div class="checklist-item">
+            <h5>02. Nutritional Continuity</h5>
+            <p>Maintain the exact clinical diet provided in your welcome kit for 14 days before introducing gradual dietary transitions.</p>
+          </div>
+          <div class="checklist-item">
+            <h5>03. Veterinary Liaison Check-In</h5>
+            <p>Complete your complimentary 7-day telehealth wellness review with your assigned sanctuary behaviorist.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="chronicles-section">
+  <div class="chronicles-container">
+    <div class="chronicles-header">
+      <span class="chronicles-sub-badge">&#9679; SANCTUARY CHRONICLES</span>
+      <h2 class="chronicles-title">Heartfelt Stories of <span>Enduring Kinship</span></h2>
+      <p class="chronicles-subtitle">Real narratives from high-profile guardians, loft dwellers, and multi-generational estates across the globe.</p>
+    </div>
+
+    <div class="chronicles-card" id="chroniclesCard">
+      <div class="chronicles-media">
+        <img src="img/stories-img.jpg" alt="Clara & Dave Sterling with Milo">
+        <span class="spotlight-badge">SPOTLIGHT PLACEMENT &bull; SOHO LOFT</span>
+      </div>
+
+      <div class="chronicles-content">
+        <div class="rating-stars">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+
+        <blockquote class="story-quote">
+          &ldquo;PAWLY matched us with Milo after three conventional shelters claimed our loft was unsuitable. Their behavioral team visited, calibrated his exercise schedule, and he has transformed our entire home into a place of warmth.&rdquo;
+        </blockquote>
+
+        <p class="story-context">
+          Before PAWLY, Milo had faced two traumatic shelter returns due to acoustic overstimulation. Through the 4-Step Protocol, our behaviorists diagnosed his needs and designed a sound-insulated acclimation room for his first 21 days.
+        </p>
+
+        <div class="guardian-footer">
+          <div class="guardian-info">
+            <h4>Clara &amp; Dave Sterling</h4>
+            <span>Guardians to Milo (Adopted August 2024)</span>
+          </div>
+          <span class="verified-badge">VERIFIED GUARDIAN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="testimonials-section">
+  <div class="testimonials-container">
+    <div class="testimonials-grid">
+      <article class="testimonial-card">
+        <div class="testimonial-media">
+          <img src="img/komment-img.jpg" alt="Dr. Julian Myers">
+        </div>
+        <div class="testimonial-stars">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+        <blockquote class="testimonial-quote">
+          &ldquo;The level of veterinary documentation was staggering. Jasper&rsquo;s full radiographic dossier was transmitted straight to my clinic before he arrived in Zurich.&rdquo;
+        </blockquote>
+        <div class="testimonial-author">
+          <h4>Dr. Julian Myers</h4>
+          <span>Zurich Sanctuary Placement</span>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="testimonial-media">
+          <img src="img/komment-img1.jpg" alt="The Alverez Family">
+        </div>
+        <div class="testimonial-stars">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+        <blockquote class="testimonial-quote">
+          &ldquo;We had two toddlers and had been turned down elsewhere. PAWLY conducted a bespoke child-interaction test and Bella is the gentlest guardian angel imaginable.&rdquo;
+        </blockquote>
+        <div class="testimonial-author">
+          <h4>The Alverez Family</h4>
+          <span>Austin Haven Placement</span>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="testimonial-media">
+          <img src="img/komment-img2.jpg" alt="Eleanor Vance">
+        </div>
+        <div class="testimonial-stars">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+        <blockquote class="testimonial-quote">
+          &ldquo;Senior animals possess such quiet dignity. PAWLY covered her initial dental surgery so she could begin her golden years in total comfort.&rdquo;
+        </blockquote>
+        <div class="testimonial-author">
+          <h4>Eleanor Vance</h4>
+          <span>Boston Guild Placement</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="pawly-footer-section">
+  <div class="pawly-footer-container">
+    <div class="pawly-footer-top">
+      <div class="pawly-brand-col">
+        <div class="pawly-logo">
+          <span class="logo-main">PAWLY</span>
+          <span class="logo-sub">INTERNATIONAL</span>
+        </div>
+        <p class="pawly-desc">
+          An elevated architectural sanctuary staging noble companions with dignity, thorough medical provenance, and transatlantic courier placement.
+        </p>
+        <div class="pawly-cities">
+          <span class="city-pill">ZURICH</span>
+          <span class="city-pill">LONDON</span>
+          <span class="city-pill">KYOTO</span>
+        </div>
+      </div>
+
+      <div class="pawly-links-grid">
+        <div class="pawly-link-col">
+          <h4>SANCTUARY</h4>
+          <ul>
+            <li><a href="#">Curated Canines</a></li>
+            <li><a href="#">Distinguished Felines</a></li>
+            <li><a href="#">Senior Champions</a></li>
+            <li><a href="#">Medical Underwriting</a></li>
+          </ul>
+        </div>
+
+        <div class="pawly-link-col">
+          <h4>PROTOCOL</h4>
+          <ul>
+            <li><a href="#">Vetting Standard</a></li>
+            <li><a href="#">Private Transit</a></li>
+            <li><a href="#">Acclimation Suites</a></li>
+            <li><a href="#">Adoption Archives</a></li>
+          </ul>
+        </div>
+
+        <div class="pawly-link-col">
+          <h4>CONCIERGE</h4>
+          <ul>
+            <li><a href="#">Private Inquiries</a></li>
+            <li><a href="#">Patron Circle</a></li>
+            <li><a href="#">Foster Estates</a></li>
+            <li><a href="#">Global Dispatch</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="pawly-footer-bottom">
+      <span class="copyright">&copy; 2025 PAWLY Sanctuary Network. All rights reserved.</span>
+      <div class="legal-links">
+        <a href="#">Sanctuary Charter</a>
+        <a href="#">Ethical Protocol</a>
+        <a href="#">Privacy Mandate</a>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
